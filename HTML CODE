@@ -1,0 +1,218 @@
+<nav id="navbar">
+    <header>CSS Grid</header>
+    <a class="nav-link" href="#Container">Container</a>
+    <a class="nav-link" href="#Rows">Rows</a>
+    <a class="nav-link" href="#Columns">Columns</a>
+    <a class="nav-link" href="#Justify-items">Justify-items</a>
+  <a class="nav-link" href="#Align-items">Align-items</a>
+  <a class="nav-link" href="#Grid-row">Grid-row</a>
+  <a class="nav-link" href="#Grid-column">Grid-Column</a>
+</nav>
+<main id="main-doc">
+  <section id="Container" class="main-section">
+    <header>Container</header>
+    <p>To set up the grid first you need to establish the container.</p>
+    <p>The most common two-ways of doing this is to set the display property of the container element to either <strong>grid</strong> or <strong>in-line grid.</strong></p>
+    <p>Then set the <strong>height</strong> and <strong>width.</strong></p>
+      <code>
+        display: grid;
+        <br>
+        height: 100px;
+        <br>
+        width: 500px;
+      </code>
+  </section>
+  <hr>
+  <section id="Rows" class="main-section">
+    <header>Rows</header>
+    <p>To define a row in your grid you use the <strong>grid-template-rows</strong> CSS property.</p>
+    <p>Each value you give the <strong>grid-template-rows</strong> property creates a row with the height of that row being equal to that value.</p>
+    <code>
+      display: grid;
+      <br>
+      grid-template-rows: 50px 50px 50px;
+      <br>
+      height: 150px;
+      <br>
+      width: 250px;
+    </code>
+    <div class="rows_grid">
+      <div class="row1"></div>
+      <div class="row2"></div>
+      <div class="row3"></div>
+    </div>
+    <p>This grid has three rows each with a height of 50px.
+  </section>
+  <hr>
+  <section id="Columns" class="main-section">
+    <header>Columns</header>
+    <p>To define a column in your grid you use the <strong>grid-template-columns</strong> CSS property.</p>
+    <p>Just like the <strong>grid-template-rows</strong> property, each value you give to the <strong>grid-template-columns</strong> property creates a column equal to that value.</p>
+    <code>
+      display: grid;
+      <br>
+      grid-template-rows: 50px 50px 50px;
+      <br>
+      grid-template-columns: 100px 100px 100px 100px;
+      <br>
+      height: 150px;
+      <br>
+      width: 400px;
+    </code>
+    <div class="columns_grid">
+      <div class="cell_1"></div>
+      <div class="cell_2"></div>
+      <div class="cell_3"></div>
+      <div class="cell_4"></div>
+      <div class="cell_5"></div>
+      <div class="cell_6"></div>
+      <div class="cell_7"></div>
+      <div class="cell_8"></div>
+      <div class="cell_9"></div>
+      <div class="cell_10"></div>
+      <div class="cell_11"></div>
+      <div class="cell_12"></div>
+    </div>
+    <p>This grid has three rows of 50px and four columns of 100px.</p>
+    <p>A short-hand technique for wrting both grid-template-rows and columns is to just use the <strong>grid-template</strong> CSS property.</p>
+    <code>grid-template: 300px 300px 300px / 100px 100px;</code>
+    <p>The code above creates three 300px <strong>rows</strong> and two 100px <strong>columns</strong>.</p>
+    <p>Anything before the <strong>/</strong> represents the <strong>grid-template-row</strong> values and anything after the <strong>/</strong> represents the <strong>grid-template-column</strong> values.</p>
+  </section>
+  <hr>
+  <section id="Justify-items" class="main-section">
+    <header>Justify-items</header>
+    <p>You can align the content of a grid along its <strong>row</strong> axis using the CSS property <strong>justify-items.</strong></p>
+    <p>The values that <strong>justify-items</strong> takes are:</p>
+    <li><code>justify-items: start;</code></li>
+    <li><code>justify-items: end;</code></li>
+    <li><code>justify-items: center;</code></li>
+    <div class="flex">
+      <div class="justify_items_grid">
+        <div class="item_1">Justify</div>
+        <div class="item_2">Items</div>
+        <div class="item_3">Start</div>
+      </div>
+      <div class="justify_items_grid_2">
+        <div class="item_4">Justify</div>
+        <div class="item_5">Items</div>
+        <div class="item_6">End</div>
+      </div>
+      <div class="justify_items_grid_3">
+        <div class="item_7">Justify</div>
+        <div class="item_8">Items</div>
+        <div class="item_9">center</div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="Align-items" class="main-section">
+    <header>Align-items</header>
+      <p>To align the content of your grid along its <strong>column</strong> axis use the CSS property <strong>align-items.</strong></p>
+    <p>The values that <strong>align-items</strong> takes are: </p>
+    <li><code>align-items: start;</code></li>
+    <li><code>align-items: end;</code></li>
+    <li><code>align-items: center;</code></li>
+    <li><code>align-items: stretch;</code></li>
+    <div class="flex">
+      <div class="align_items_grid">
+        <div class="item_10">Align</div>
+        <div class="item_11">Items</div>
+        <div class="item_12">Start</div>
+      </div>
+      <div class="align_items_grid_2">
+        <div class="item_13">Align</div>
+        <div class="item_14">Items</div>
+        <div class="item_15">End</div>
+      </div>
+      <div class="align_items_grid_3">
+        <div class="item_16">Align</div>
+        <div class="item_17">Items</div>
+        <div class="item_18">center</div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="Grid-row" class="main-section">
+    <header>Grid-row</header>
+    <p>By using the <strong>grid-row</strong> CSS property you can span an item along multiple rows.</p>
+    <p>This property is used on the grid-item element that you wish to span.</p>
+    <div class="Grid-row_flex">
+      <div class="gr_grid">
+        <div class="gr_item_1"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+      </div>
+      <div class="gr_grid_2">
+        <div class="gr_item_3"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+        <div class="gr_item_2"></div>
+      </div>
+    </div>
+    <p>The first grid has the following CSS code styled on the first grid-item:</p>
+    <code>
+      grid-row-start: 1;
+      <br>
+      grid-row-end: 3;
+    </code>
+    <p>The second grid has the following CSS code styled to the first grid-item:</p>
+    <code>
+      grid-row-start: span 3;
+    </code>
+  </section>
+  <hr>
+  <section id="Grid-column" class="main-section">
+    <header>Grid-column</header>
+    <p>By using the <strong>grid-column</strong> property you can span an item along multiple columns.</p>
+    <p>This property is used on the grid-item element that you wish to span.</p>
+    <div class="Grid-column_flex">
+      <div class="gc_grid">
+        <div class="gc_item_2"></div>
+        <div class="gc_item_4"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+      </div>
+      <div class="gc_grid">
+        <div class="gc_item_5"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+        <div class="gc_item_2"></div>
+      </div>
+    </div>
+      <p>The first grid has the following CSS code styled on the second grid-item:</p>
+      <code>
+        grid-column-start: 2;
+        <br>
+        grid-column-end: 4;
+      </code>
+      <p>The second grid has the following CSS code styled on the first grid-item:</p>
+      <code> 
+        grid-column-start: span 3;
+      </code>
+  </section>
+</main>
+    
+
+  
