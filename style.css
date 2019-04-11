@@ -409,4 +409,27 @@ main {
     width: 100%;
     left: 0;
   }
+  
+  .main_section {
+    text-align: center;
+  }
+  
+  .rows_grid {
+    margin: 25px auto;
+  }
+  
+  .columns_grid {
+    margin: 25px auto;
+  }
+  
+  .gr_grid, .gr_grid_2 {
+    position: relative;
+    left: 50px;
+  }
+  
+  .gc_grid, .gc_grid_2 {
+    position: relative;
+    left: 50px;
+  }
+
 }
