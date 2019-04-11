@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: rgba(158, 158, 158, 0.5)
+}
+
+/* NAVBAR */
+#navbar {
+  position: fixed;
+  float: left;
+  width: 225px;
+  height: 100%;
+  border-right: 1.25px solid black;
+  padding: 10px;
+}
+
+#navbar header {
+  font-size: 2.5rem;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;  
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: rgba(158, 158, 158, 1);
+}
+
+
+a:hover {
+  color: white;
+}
+
+
+/* MAIN */
+main {
+  position: absolute;
+  left: 250px;
+  font-size: 1.15rem;
+}
+
+.main-section header {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-section {
+  padding: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ROWS SECTION */
+.rows_grid {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  height: 150px;
+  width: 250px;
+  margin-top: 25px;
+}
+
+.row1 {
+  background-color: red;
+}
+
+.row2 {
+  background-color: orange;
+}
+
+.row3 {
+  background-color: yellow;
+}
+
+/* COLUMNS SECTION */
+.columns_grid {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 100px 100px 100px 100px;
+  height: 150px;
+  width: 400px;
+  margin-top: 25px;
+}
+
+.cell_1 {
+  background-color: red;
+}
+
+.cell_2 {
+  background-color: orange;
+}
+
+.cell_3 {
+  background-color: yellow;
+}
+
+.cell_4 {
+  background-color: green;
+}
+
+.cell_5 {
+  background-color: blue;
+}
+
+.cell_6 {
+  background-color: indigo;
+}
+
+.cell_7 {
+  background-color: violet;
+}
+
+.cell_8 {
+  background-color: red;
+}
+
+.cell_9 {
+  background-color: orange;
+}
+
+.cell_10 {
+  background-color: yellow;
+}
+
+.cell_11 {
+  background-color: green;
+}
+
+.cell_12 {
+  background-color: blue;
+}
+
+/* JUSTIFY-ITEMS SECTION */
+.justify_items_grid {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  justify-items: start;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_1 {
+  background-color: green;
+  color: white;
+}
+
+.item_2 {
+  background-color: blue;
+  color: white;
+}
+
+.item_3 {
+  background-color: indigo;
+  color: white
+}
+
+.justify_items_grid_2 {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  justify-items: end;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_4 {
+  background-color: violet;
+  color: white;
+}
+
+.item_5 {
+  background-color: red;
+  color: white;
+}
+
+.item_6 {
+  background-color: orange;
+  color: white;
+}
+
+.justify_items_grid_3 {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  justify-items: center;;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_7 {
+  background-color: yellow;
+  color: black;
+}
+
+.item_8 {
+  background-color: green;
+  color: white;
+}
+
+.item_9 {
+  background-color: blue;
+  color: white;
+}
+
+/* ALIGN-ITEMS SECTION */
+.align_items_grid {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  align-items: start;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_10 {
+  background-color: indigo;
+  color: white;
+}
+
+.item_11 {
+  background-color: violet;
+  color: white;
+}
+
+.item_12 {
+  background-color: red;
+  color: white;
+}
+
+.align_items_grid_2 {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  align-items: end;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_13 {
+  background-color: orange;
+  color: white;
+}
+
+.item_14 {
+  background-color: yellow;
+  color: black;
+}
+
+.item_15 {
+  background-color: green;
+  color: white;
+}
+
+.align_items_grid_3 {
+  display: grid;
+  grid-template-rows: repeat(3, 30px);
+  height: 90x;
+  width: 90px;
+  align: center;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.item_16 {
+  background-color: blue;
+  color: white;
+}
+
+.item_17 {
+  background-color: violet;
+  color: white;
+}
+
+.item_18 {
+  background-color: red;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.gr_grid {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  grid-gap: 2px;
+  margin-bottom: 25px;
+}
+
+.gr_item_1 {
+  background-color: white;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid black;
+}
+
+.gr_item_2 {
+  background-color: black;
+}
+
+.gr_grid_2 {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  grid-gap: 2px;
+  margin-bottom: 25px;
+}
+
+.gr_item_3 {
+  grid-row-start: span 3;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.Grid-row_flex {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+/* GRID-COLUMN SECTION */
+.gc_grid {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  grid-gap: 2px;
+  margin-bottom: 25px;
+}
+
+.gc_item_2 {
+  background-color: black;
+}
+
+.gc_item_4 {
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border: 1px solid black;
+}
+
+.gc_item_5 {
+  background-color: white;
+  grid-column-start: span 3;
+  border: 1px solid black;
+}
+
+.Grid-column_flex {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    float: none;
+    width: 100%;  
+    position: relative;
+    text-align: center;
+  }
+  
+  #navbar header {
+    padding: 5px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  main {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
